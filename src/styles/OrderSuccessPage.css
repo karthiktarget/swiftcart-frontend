@@ -1,0 +1,22 @@
+/* src/styles/OrderSuccessPage.css */
+.success-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #4caf50;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #252326;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

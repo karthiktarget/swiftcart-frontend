@@ -1,0 +1,134 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f0f0, #d8b2ff);
+}
+
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.profile-card:hover {
+  transform: scale(1.02);
+}
+
+/* 🔹 User Avatar */
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7d33af;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Profile Info */
+.profile-info p {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 🔹 Profile Form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Profile Form Inputs */
+.profile-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.profile-form input:focus {
+  border-color: #7d33af;
+  box-shadow: 0 0 5px rgba(125, 51, 175, 0.4);
+  outline: none;
+}
+
+/* 🔹 Buttons */
+.profile-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #7d33af, #5a189a);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.profile-button:hover {
+  background: linear-gradient(135deg, #5a189a, #7d33af);
+  transform: scale(1.05);
+}
+
+/* 🔹 Profile Links */
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Styled Links */
+.profile-links a {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #ff6600;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+/* Icon Styling */
+.profile-links a::before {
+  content: "📦";
+  font-size: 18px;
+}
+
+/* Back to Home Link */
+.profile-links a:last-child::before {
+  content: "🏠";
+}
+
+/* Hover Effect */
+.profile-links a:hover {
+  background: #ff4500;
+  transform: scale(1.05);
+}

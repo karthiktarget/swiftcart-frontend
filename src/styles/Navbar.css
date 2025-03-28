@@ -1,0 +1,224 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none !important; 
+  color: inherit; 
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.website-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+.website-name:hover {
+  color: #7d33af;
+}
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #7d33af;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li {
+  display: inline;
+  font-size: 20px;
+}
+
+.nav-links a {
+  text-decoration: none; 
+  color: #333;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #7d33af; 
+  text-decoration: none; 
+}
+.nav-links a:active {
+  color: #533197;
+}
+.nav-icons {
+  display: flex;
+  gap: 15px;
+
+}
+
+.search-icon {
+  color: #302f33;
+  transition: color 0.2s ease-in-out;
+  transform: translateY(20px);
+  
+}
+.search-icon:hover {
+  color: #4f23a6;
+  cursor: pointer;
+}
+
+/* Search Dropdown */
+.search-dropdown {
+  position: absolute;
+  top: 90px;
+  left: 1450px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 280px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.search-dropdown input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* General Button Styling */
+.search-dropdown button {
+  background: linear-gradient(135deg, #7d33af, #5a189a);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  text-align: center; /* Ensures text alignment */
+  display: flex; /* Allows better centering */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  width: 100%; /* Ensures the button stretches properly */
+}
+
+
+/* Hover Effect */
+.search-dropdown button:hover {
+  background: linear-gradient(135deg, #5a189a, #7d33af);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Click Effect */
+.search-dropdown button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ripple Effect */
+.search-dropdown button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.6s ease-out;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.search-dropdown button:active::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+
+/* Dropdown Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style the login/signup link */
+/* .login-link {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  text-decoration: none; 
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-icon {
+  font-size: 24px; 
+  color: #7d33af;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #4f23a6;
+}
+
+.login-link:hover .login-icon {
+  color: #4f23a6;
+  transform: scale(1.1); 
+} */
+
+.login-icon:hover,.cart-icon:hover,.profile-icon:hover {
+  color: #4f23a6;
+  transform: scale(1.1); 
+}
+

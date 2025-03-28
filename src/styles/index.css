@@ -1,0 +1,73 @@
+
+
+/* Reset margins, paddings, box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Smooth font rendering */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Remove link underlines by default */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Headings styling */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Buttons styling */
+  button {
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  /* Container layout for consistent spacing */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Utility classes */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Scrollbar style (optional) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+  }
+  

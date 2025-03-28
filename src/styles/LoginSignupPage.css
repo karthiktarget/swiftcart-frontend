@@ -1,0 +1,180 @@
+/* 🔹 Full Page Background */
+.login-signup-page {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f0f0, #d8b2ff);
+}
+
+/* 🔹 Login & Signup Page Container */
+.login-signup-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Title */
+.login-signup-container h2 {
+  margin-bottom: 20px;
+  color: #7d33af;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 🔹 Form Styling */
+.login-signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 🔹 Input Fields */
+.login-signup-container input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Highlight input on focus */
+.login-signup-container input:focus {
+  border-color: #7d33af;
+  box-shadow: 0 0 5px rgba(125, 51, 175, 0.4);
+}
+
+/* 🔹 Password Field with Eye Icon */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: #7d33af;
+}
+
+/* 🔹 Remember Me Checkbox */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.remember-me input {
+  cursor: pointer;
+}
+
+/* 🔹 Submit Button */
+.login-signup-container button {
+  padding: 12px;
+  background: linear-gradient(135deg, #7d33af, #5a189a);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.login-signup-container button:hover {
+  background: linear-gradient(135deg, #5a189a, #7d33af);
+  transform: scale(1.05);
+}
+
+/* 🔹 Social Login Buttons */
+.social-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Base button styles */
+.google-btn,
+.facebook-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 170px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: center;
+}
+
+/* Google Button */
+.google-btn {
+  background-color: #db4437;
+}
+
+.google-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Facebook Button */
+.facebook-btn {
+  background-color: #1877f2;
+}
+
+.facebook-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hover Effects */
+.google-btn:hover,
+.facebook-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Bottom Text & Link */
+.login-signup-container p {
+  margin-top: 15px;
+  color: #555;
+}
+
+.login-signup-container span {
+  color: #7d33af;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-signup-container span:hover {
+  text-decoration: underline;
+}
