@@ -26,8 +26,8 @@ import img21 from "../assets/tools.jpeg";
 const categories = [
   { name: "Mobiles, Computers", img: img1 },
   { name: "TV, Appliances, Electronics", img: img2 },
-  { name: "Men's Fashion", img: img3 },
-  { name: "Women's Fashion", img: img4 },
+  { name: "Men's Clothing", img: img3 },
+  { name: "Women's Clothing", img: img4 },
   { name: "Kid's Fashion", img: img5 },
   { name: "Home, Kitchen, Pets", img: img6 },
   { name: "Beauty", img: img7 },
@@ -41,7 +41,7 @@ const categories = [
   { name: "Movies", img: img15 },
   { name: "Footwear", img: img16 },
   { name: "Fitness", img: img17 },
-  { name: "Jwellery", img: img18 },
+  { name: "Jewelery", img: img18 },
   { name: "Music", img: img19 },
   { name: "Video Games", img: img20 },
   { name: "Tools", img: img21 }

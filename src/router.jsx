@@ -11,6 +11,7 @@ import OrdersPage from "./pages/OrdersPage";
 import ProfilePage from "./pages/ProfilePage";
 import CustomerSupport from "./pages/CustomerSupport";
 import CategoryPage from "./pages/CategoryPage";
+import CategoryProduct from "./pages/CategoryProduct";
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,7 @@ const AppRouter = () => {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/support" element={<CustomerSupport />} />
         <Route path="/category" element={<CategoryPage />} />
+        <Route path="/category/:categoryName" element={<CategoryProduct />} />
       </Routes>
     </Router>
   );

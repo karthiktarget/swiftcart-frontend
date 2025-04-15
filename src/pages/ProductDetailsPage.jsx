@@ -1,40 +1,32 @@
-import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import products from "../data/products";
-import { useCart } from "../context/CartContext";
-import "../styles/ProductDetailsPage.css";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ProductDetails from "../components/ProductDetails";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
-  const { dispatch } = useCart();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const product = products.find((p) => p.id === id);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`http://localhost:8080/api/products/${id}`);
+        const data = await res.json();
+        setProduct(data);
+      } catch (error) {
+        console.error("Failed to fetch product:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  if (!product) return <h2>Product not found!</h2>;
+    fetchProduct();
+  }, [id]);
 
-  const handleAddToCart = () => {
-    dispatch({ type: "ADD_TO_CART", payload: product });
-    navigate("/cart");
-  };
+  if (loading) return <p style={{ textAlign: "center" }}>Loading...</p>;
+  if (!product) return <p style={{ textAlign: "center" }}>Product not found</p>;
 
-  return (
-    <div className="product-details-container">
-      <div className="product-image">
-        <img src={product.image} alt={product.name} />
-      </div>
-
-      <div className="product-info">
-        <h1>{product.name}</h1>
-        <p className="product-price">${product.price.toFixed(2)}</p>
-        <p className="product-description">{product.description}</p>
-
-        <button className="add-to-cart-btn" onClick={handleAddToCart}>
-          Add to Cart 🛒
-        </button>
-      </div>
-    </div>
-  );
+  return <ProductDetails product={product} />;
 };
 
 export default ProductDetailsPage;
