@@ -6,7 +6,13 @@ export const fetchProducts = async () => {
   const response = await axios.get(API_URL);
   return response.data;
 };
-export const fetchProductsByCategory = async (category) => {
-    const res = await axios.get(`http://localhost:8080/api/products/category/${category}`);
-    return res.data;
-  };
+
+export const fetchProductsByCategory = async (category, page = 0) => {
+  const response = await axios.get(`${API_URL}/category`, {
+    params: {
+      type: category,
+      page: page,
+    },
+  });
+  return response.data;
+};

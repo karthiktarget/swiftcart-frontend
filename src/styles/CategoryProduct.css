@@ -56,4 +56,25 @@
     color: #28a745;
     font-size: 1rem;
   }
+  .category-page__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .category-page__pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .category-page__pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
   
